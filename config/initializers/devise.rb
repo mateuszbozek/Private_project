@@ -317,8 +317,8 @@ Devise.setup do |config|
 
   config.saml_route_helper_prefix = 'saml'
 
-  config.saml_create_user = true
-  config.saml_update_user = true
+  config.saml_create_user = false
+  config.saml_update_user = false
   config.saml_default_user_key = :email
   config.saml_session_index_key = :session_index
   config.saml_use_subject = true
@@ -329,7 +329,7 @@ Devise.setup do |config|
     settings.name_identifier_format             = "urn:oasis:names:tc:SAML:2.0:nameid-format:transient"
     settings.issuer                             = "#{$callback}/users/saml/metadata"
     settings.authn_context                      = ""
-    settings.idp_slo_target_url                 = "#{$callback}"
+    settings.idp_slo_target_url                 = ""
     settings.idp_sso_target_url                 = "https://semanticore.okta.com/app/semanticoreorg481063_testapp_1/exkuaznftgnhYTM8p4x6/sso/saml"
     settings.idp_cert_fingerprint               = 'FE:22:5B:92:92:6D:4C:E8:99:A1:5A:1B:32:31:7D:69:37:2C:70:AA:58:86:A6:69:16:39:A6:7B:22:84:E6:9B'
     settings.idp_cert_fingerprint_algorithm     = 'http://www.w3.org/2000/09/xmldsig#sha256'

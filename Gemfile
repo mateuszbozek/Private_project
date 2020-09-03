@@ -27,6 +27,8 @@ gem 'devise_saml_authenticatable'
 gem 'bootstrap'
 gem 'jquery-rails'
 
+gem 'ruby-saml'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
